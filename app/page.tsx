@@ -6,13 +6,13 @@ export default function RedCrabIceWebsite() {
       link: '#signals',
     },
     {
-      title: 'Mentorship',
-      description: 'Learn structure, psychology, risk management and trading discipline.',
+      title: 'Mentorship, I do not provide',
+      description: 'you can learn from fx.speedrunners and other traders, I do not provide mentorship.',
       link: '#mentorship',
     },
     {
       title: 'Automation & Bots',
-      description: 'Trading tools and automation systems built for efficiency.',
+      description: 'Trading tools and automation systems built for efficiency investing longterm.',
       link: '#bots',
     },
   ]
@@ -57,7 +57,7 @@ export default function RedCrabIceWebsite() {
       {/* Hero */}
       <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-6">
         <p className="uppercase tracking-[0.4em] text-red-500 mb-4 text-sm">
-          Precision • Patience • Execution
+          Disciplined • Patience • Execution
         </p>
 
         <h1 className="text-5xl md:text-7xl font-black leading-tight max-w-5xl">
@@ -65,7 +65,7 @@ export default function RedCrabIceWebsite() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-zinc-400 text-lg">
-          Transparent trading, disciplined execution and premium trading services built for serious traders.
+          Transparent trading, disciplined execution and premium trading services built for <span className="text-red-600">serious traders.</span>
         </p>
 
         <div className="flex flex-wrap gap-4 mt-10">
@@ -91,8 +91,11 @@ export default function RedCrabIceWebsite() {
           <h2 className="text-4xl font-bold mb-8">About REDCRABICE</h2>
 
           <p className="text-zinc-400 text-lg leading-8">
-            REDCRABICE focuses on transparency, precision and disciplined trading.
-            No fake lifestyle. No overhyped promises. Just structured execution,
+            Hi, I'm <span className="text-red-600">Atus</span> , I have been trading seriously for about 2 years along <span className="text-red-600">Fx.speedrunners</span> traders.
+            I want to show the <span className="text-red-600">Beauty of trading</span> so...No fake flashy lifestyle. No overhyped promises.
+          </p>
+          <p className="text-zinc-400 text-lg leading-8">
+             Just transparency, precision, discipline, structured execution,
             risk management and consistency.
           </p>
         </div>
@@ -122,9 +125,11 @@ export default function RedCrabIceWebsite() {
                   {service.description}
                 </p>
 
-                <button className="w-full bg-black border border-red-700 rounded-xl py-3 hover:bg-red-700 transition">
-                  Learn More
-                </button>
+                <a href={service.link}>
+  <button className="w-full bg-black border border-red-700 rounded-xl py-3 hover:bg-red-700 transition">
+    Learn More
+  </button>
+</a>
               </div>
             ))}
           </div>
@@ -151,14 +156,24 @@ export default function RedCrabIceWebsite() {
               <li>• Transparent execution</li>
             </ul>
 
-            <button className="mt-10 bg-red-700 hover:bg-red-600 transition px-6 py-3 rounded-2xl font-semibold">
-              Join Telegram
-            </button>
+            <a
+  href="https://ig.me/m/redcrabice"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="mt-10 bg-red-700 hover:bg-red-600 hover:scale-105 transition duration-300 px-6 py-3 rounded-2xl font-semibold">
+    Join Telegram - DM @redcrabice
+  </button>
+</a>
           </div>
 
-          <div className="border border-dashed border-red-700 rounded-3xl h-[400px] flex items-center justify-center text-zinc-500 bg-white/5">
-            Telegram Screenshots Placeholder
-          </div>
+          <div className="border border-dashed border-red-700 rounded-3xl h-[400px] overflow-hidden bg-white/5">
+  <img
+    src="/telegram-proof.jpg"
+    alt="Telegram Proof"
+    className="w-full h-full object-cover hover:scale-105 transition duration-500"
+  />
+</div>
         </div>
       </section>
 
@@ -173,25 +188,104 @@ export default function RedCrabIceWebsite() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {payments.map((payment) => (
-              <div
-                key={payment.title}
-                className="border border-white/10 rounded-3xl p-8 bg-white/5 hover:border-red-700 transition"
-              >
-                <h3 className="text-2xl font-bold mb-4 text-red-500">
-                  {payment.title}
-                </h3>
 
-                <p className="text-zinc-400 mb-8 leading-7">
-                  {payment.description}
-                </p>
+  {/* Stripe */}
+  <div className="
+border border-white/10
+rounded-3xl
+p-8
+bg-white/5
+hover:border-red-600
+hover:-translate-y-2
+hover:shadow-red-500/20
+hover:shadow-2xl
+transition-all
+duration-300
+">
+    <h3 className="text-2xl font-bold mb-4 text-red-500">
+      <span className="text-purple-600">Stripe</span> / Revolut
+    </h3>
 
-                <div className="aspect-square border border-dashed border-red-700 rounded-2xl flex items-center justify-center text-zinc-500">
-                  QR CODE
-                </div>
-              </div>
-            ))}
-          </div>
+    <p className="text-zinc-400 mb-8">
+      for <span className="text-purple-600">stripe</span> link please click on the revolut image
+    </p>
+
+    <a
+  href="https://buy.stripe.com/cNi14m67jcjd1TceK90VO00"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div className="aspect-square border border-dashed border-red-700 rounded-2xl overflow-hidden">
+    <img
+      src="/stripe-qr.jpg"
+      alt="Stripe QR"
+      className="w-full h-full object-contain p-4 hover:scale-105 transition duration-300"
+    />
+  </div>
+</a>
+  </div>
+
+  {/* BTC */}
+  <div className="
+border border-white/10
+rounded-3xl
+p-8
+bg-white/5
+hover:border-red-600
+hover:-translate-y-2
+hover:shadow-red-500/20
+hover:shadow-2xl
+transition-all
+duration-300
+">
+    <h3 className="text-2xl font-bold mb-4 text-red-500">
+      Bitcoin (BTC)
+    </h3>
+
+    <p className="text-zinc-400 mb-8">
+      BTC - BTC network.
+    </p>
+
+    <div className="aspect-square border border-dashed border-red-700 rounded-2xl overflow-hidden">
+      <img
+        src="/BTC-QR.jpg"
+        alt="BTC QR"
+        className="w-full h-full object-contain p-4"
+      />
+    </div>
+  </div>
+
+  {/* USDT */}
+  <div className="
+border border-white/10
+rounded-3xl
+p-8
+bg-white/5
+hover:border-red-600
+hover:-translate-y-2
+hover:shadow-red-500/20
+hover:shadow-2xl
+transition-all
+duration-300
+">
+    <h3 className="text-2xl font-bold mb-4 text-red-500">
+      USDT
+    </h3>
+
+    <p className="text-zinc-400 mb-8">
+      USDT - BEP20 network.
+    </p>
+
+    <div className="aspect-square border border-dashed border-red-700 rounded-2xl overflow-hidden">
+      <img
+        src="/USDT-QR.jpg"
+        alt="USDT QR"
+        className="w-full h-full object-contain p-4"
+      />
+    </div>
+  </div>
+
+</div>
         </div>
       </section>
 
