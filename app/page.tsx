@@ -70,7 +70,21 @@ const services = [
       </nav>
 
       {/* Hero */}
-      <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-6">
+      <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-6 -mt-8">
+          
+         
+         <div className="relative w-72 md:w-[500px] mb-8 animate-float">
+  <img
+    src="/logo-symbol.png"
+    alt="Structure"
+    className="w-full opacity-80"
+  />
+
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="moving-dot"></div>
+  </div>
+</div>
+         
         <p className="uppercase tracking-[0.4em] text-red-500 mb-4 text-sm">
           Disciplined • Patience • Execution
         </p>
@@ -163,6 +177,12 @@ const services = [
       </section>
 
       {/* Signal Group */}
+
+
+              
+
+
+
       <section id="signals" className="px-6 py-24 border-t border-white/10">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           <div>
@@ -216,6 +236,75 @@ const services = [
     />
   </div>)}
         </div>
+
+<section className="px-6 py-20 border-t border-white/10">
+  <div className="max-w-6xl mx-auto">
+
+    <h2 className="text-3xl md:text-5xl font-black text-center mb-12">
+      This Month We Netted <span className="text-red-600">26R</span>
+    </h2>
+
+    <div className="grid md:grid-cols-3 gap-6">
+
+      {/* Account Size */}
+      <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6">
+        <p className="text-zinc-500 text-sm mb-3 uppercase tracking-[0.2em]">
+          Account Size
+        </p>
+
+        <div className="flex items-center justify-between">
+          <span className="text-zinc-500 text-2xl">$</span>
+
+          <h3 className="text-4xl font-black">
+            100,000
+          </h3>
+        </div>
+      </div>
+
+      {/* Risk Per Trade */}
+      <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6">
+        <p className="text-zinc-500 text-sm mb-3 uppercase tracking-[0.2em]">
+          Risk Per Trade (R)
+        </p>
+
+        <div className="flex items-center justify-between">
+          <span className="text-zinc-500 text-2xl">
+            %
+          </span>
+          <h3 className="text-4xl font-black">
+            1
+          </h3>
+
+          
+        </div>
+      </div>
+
+      {/* Final Account */}
+      <div className="bg-red-950/20 border border-red-700/30 rounded-2xl p-6">
+  <p className="text-red-400 text-sm mb-3 uppercase tracking-[0.2em]">
+    Final Account Size
+  </p>
+
+  <div className="flex items-center justify-between">
+    <span className="text-red-500 text-2xl font-bold">$</span>
+
+    <h3 className="text-4xl font-black text-red-500">
+      126,000
+    </h3>
+  </div>
+</div>
+
+    </div>
+
+    <p className="text-zinc-600 text-sm text-center mt-8">
+      Transparent execution. Past performance does not guarantee future results.
+    </p>
+
+  </div>
+</section>
+
+
+        
       </section>
 
       {/* Payments */}
