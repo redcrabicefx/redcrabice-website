@@ -418,7 +418,14 @@ duration-300
 </div>
         </div>
       </section>
-
+<a
+  href="https://instagram.com/redcrabice"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-6 right-6 z-50 bg-red-600 hover:bg-red-500 text-white px-5 py-3 rounded-full shadow-[0_0_25px_rgba(255,0,0,0.5)] transition duration-300 hover:scale-105"
+>
+  Contact Me
+</a>
       {/* Footer */}
       <footer className="border-t border-white/10 py-10 px-6 text-center text-zinc-500">
         <p>© 2026 REDCRABICE — All Rights Reserved</p>
