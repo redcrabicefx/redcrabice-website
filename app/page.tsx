@@ -369,11 +369,11 @@ transition-all
 duration-300
 ">
     <h3 className="text-2xl font-bold mb-4 text-red-500">
-      Bitcoin (BTC)
+      Bitcoin (BTC network.)
     </h3>
 
     <p className="text-zinc-400 mb-8">
-      BTC - BTC network.
+      <span className="text-yellow-600">147aA</span>z69CvCSedd7rSxGnzte8vnM<span className="text-yellow-600">N6D242</span>
     </p>
 
     <div className="aspect-square border border-dashed border-red-700 rounded-2xl overflow-hidden">
@@ -399,11 +399,11 @@ transition-all
 duration-300
 ">
     <h3 className="text-2xl font-bold mb-4 text-red-500">
-      USDT
+      USDT - BEP20 network.
     </h3>
 
     <p className="text-zinc-400 mb-8">
-      USDT - BEP20 network.
+      <span className="text-green-600">0x1668a</span>f9ed86385d1eb617a620f75232579<span className="text-green-600">fcb39b</span>
     </p>
 
     <div className="aspect-square border border-dashed border-red-700 rounded-2xl overflow-hidden">
