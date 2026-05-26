@@ -1,21 +1,36 @@
+"use client"
+
+import { useState } from "react"
+
 export default function RedCrabIceWebsite() {
-  const services = [
-    {
-      title: 'Signal Group',
-      description: 'Live trades, market outlooks, SL/TP levels and disciplined execution.',
-      link: '#signals',
-    },
-    {
-      title: 'Mentorship, I do not provide',
-      description: 'you can learn from fx.speedrunners and other traders, I do not provide mentorship.',
-      link: '#mentorship',
-    },
-    {
-      title: 'Automation & Bots',
-      description: 'Trading tools and automation systems built for efficiency investing longterm.',
-      link: '#bots',
-    },
-  ]
+  
+  const [openImage, setOpenImage] = useState(false)
+
+const services = [
+  {
+    title: "Signal Group",
+    description:
+      "Live trades, market outlooks, SL/TP levels and disciplined execution.",
+    link: "#signals",
+    button: "Learn More",
+  },
+
+  {
+    title: "Mentorship, I do not provide",
+    description:
+      "you can learn from FX.SPEEDRUNNER and other traders, I do not provide mentorship.",
+    link: "https://www.instagram.com/fx.speedrunner/",
+    button: "Open Instagram",
+  },
+
+  {
+    title: "Automation & Bots",
+    description:
+      "Trading tools and automation systems built for efficiency investing longterm. For EURUSD and NAS100.",
+    link: "#",
+    button: "Coming Soon",
+  },
+]
 
   const payments = [
     {
@@ -125,9 +140,20 @@ export default function RedCrabIceWebsite() {
                   {service.description}
                 </p>
 
-                <a href={service.link}>
-  <button className="w-full bg-black border border-red-700 rounded-xl py-3 hover:bg-red-700 transition">
-    Learn More
+                <a
+  href={service.link}
+  target={service.link.startsWith("http") ? "_blank" : "_self"}
+  rel="noopener noreferrer"
+>
+  <button
+    className={`mt-8 w-full py-4 rounded-2xl border transition ${
+      service.button === "Coming Soon"
+        ? "border-zinc-700 text-zinc-500 cursor-not-allowed"
+        : "border-red-700 hover:bg-red-700"
+    }`}
+    disabled={service.button === "Coming Soon"}
+  >
+    {service.button}
   </button>
 </a>
               </div>
@@ -167,13 +193,28 @@ export default function RedCrabIceWebsite() {
 </a>
           </div>
 
-          <div className="border border-dashed border-red-700 rounded-3xl h-[250px] md:h-[400px] overflow-hidden bg-white/5">
+          <div
+  className="border border-dashed border-red-700 rounded-3xl h-[250px] md:h-[400px] overflow-hidden bg-white/5 cursor-pointer"
+  onClick={() => setOpenImage(true)}
+>
   <img
     src="/telegram-proof.jpg"
     alt="Telegram Proof"
     className="w-full h-full object-cover hover:scale-105 transition duration-500"
   />
 </div>
+
+{openImage && (
+  <div
+    className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-6"
+    onClick={() => setOpenImage(false)}
+  >
+    <img
+      src="/telegram-proof.jpg"
+      alt="Expanded"
+      className="max-w-full max-h-full rounded-2xl"
+    />
+  </div>)}
         </div>
       </section>
 
