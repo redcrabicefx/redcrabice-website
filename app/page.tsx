@@ -10,7 +10,7 @@ const services = [
   {
     title: "Signal Group",
     description:
-      "Live trades, market outlooks, SL/TP levels and disciplined execution.",
+      "Live trades, market outlooks, SL/TP levels and disciplined execution. for 99$ / month.",
     link: "#signals",
     button: "Learn More",
   },
@@ -26,7 +26,7 @@ const services = [
   {
     title: "Automation & Bots",
     description:
-      "Trading tools and automation systems built for efficiency investing longterm. For EURUSD and NAS100.",
+      "Trading tools and automation systems built for efficiency investing longterm, coming soon.",
     link: "#",
     button: "Coming Soon",
   },
@@ -171,7 +171,7 @@ const services = [
             </p>
 
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Structured Trades. Real Execution.
+              Structured Trades. Real Execution. Market Outlooks.
             </h2>
 
             <ul className="space-y-4 text-zinc-400">
@@ -188,7 +188,7 @@ const services = [
   rel="noopener noreferrer"
 >
   <button className="mt-10 bg-red-700 hover:bg-red-600 hover:scale-105 transition duration-300 px-6 py-3 rounded-2xl font-semibold">
-    Join Telegram - DM @redcrabice
+    Join Telegram 99$ / Month - DM @redcrabice
   </button>
 </a>
           </div>
@@ -222,9 +222,9 @@ const services = [
       <section id="payments" className="px-6 py-24 border-t border-white/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold">Payment Methods</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Payment Methods to join the <span className="text-cyan-600">Telegram</span> Group</h2>
             <p className="text-zinc-500 mt-4">
-              Secure payment options with QR placeholders ready.
+              Please DM <span className="text-red-600">@redcrabice</span> on Instagram after payment with the screenshot of your payment and the service you want to purchase, thank you.
             </p>
           </div>
 
