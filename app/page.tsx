@@ -40,7 +40,7 @@ export default function RedCrabIceWebsite() {
       </div>
 
       {/* Navbar */}
-      <nav className="flex items-center justify-between px-6 py-5 border-b border-white/10 backdrop-blur-md sticky top-0 bg-black/50 z-50">
+      <nav className="flex items-center justify-between px-4 md:px-6 py-4 md:py-5 border-b border-white/10 backdrop-blur-md sticky top-0 bg-black/50 z-50">
         <div>
           <h1 className="text-2xl font-bold tracking-[0.25em]">REDCRABICE</h1>
         </div>
@@ -60,11 +60,11 @@ export default function RedCrabIceWebsite() {
           Disciplined • Patience • Execution
         </p>
 
-        <h1 className="text-5xl md:text-7xl font-black leading-tight max-w-5xl">
+        <h1 className="text-3xl md:text-7xl font-black leading-tight max-w-5xl">
           Trade With <span className="text-red-600">Structure</span>.
         </h1>
 
-        <p className="mt-6 max-w-2xl text-zinc-400 text-lg">
+        <p className="mt-6 max-w-2xl text-zinc-400 text-base md:text-lg">
           Transparent trading, disciplined execution and premium trading services built for <span className="text-red-600">serious traders.</span>
         </p>
 
@@ -88,13 +88,13 @@ export default function RedCrabIceWebsite() {
       {/* About */}
       <section className="px-6 py-24 border-t border-white/10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">About REDCRABICE</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">About REDCRABICE</h2>
 
-          <p className="text-zinc-400 text-lg leading-8">
+          <p className="text-zinc-400 text-base md:text-lg leading-8">
             Hi, I'm <span className="text-red-600">Atus</span> , I have been trading seriously for about 2 years along <span className="text-red-600">Fx.speedrunners</span> traders.
             I want to show the <span className="text-red-600">Beauty of trading</span> so...No fake flashy lifestyle. No overhyped promises.
           </p>
-          <p className="text-zinc-400 text-lg leading-8">
+          <p className="text-zinc-400 text-base md:text-lg leading-8">
              Just transparency, precision, discipline, structured execution,
             risk management and consistency.
           </p>
@@ -105,7 +105,7 @@ export default function RedCrabIceWebsite() {
       <section id="services" className="px-6 py-24 border-t border-white/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold">Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Services</h2>
             <p className="text-zinc-500 mt-4">
               Choose the service that fits your trading journey.
             </p>
@@ -115,7 +115,7 @@ export default function RedCrabIceWebsite() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="group border border-white/10 bg-white/5 rounded-3xl p-8 hover:border-red-700 hover:bg-red-950/20 transition duration-300"
+                className="group border border-white/10 bg-white/5 rounded-3xl p-4 md:p-8 hover:border-red-700 hover:bg-red-950/20 transition duration-300"
               >
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-red-500 transition">
                   {service.title}
@@ -138,13 +138,13 @@ export default function RedCrabIceWebsite() {
 
       {/* Signal Group */}
       <section id="signals" className="px-6 py-24 border-t border-white/10">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           <div>
             <p className="text-red-500 uppercase tracking-[0.3em] mb-4 text-sm">
               Telegram Signal Group
             </p>
 
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Structured Trades. Real Execution.
             </h2>
 
@@ -167,7 +167,7 @@ export default function RedCrabIceWebsite() {
 </a>
           </div>
 
-          <div className="border border-dashed border-red-700 rounded-3xl h-[400px] overflow-hidden bg-white/5">
+          <div className="border border-dashed border-red-700 rounded-3xl h-[250px] md:h-[400px] overflow-hidden bg-white/5">
   <img
     src="/telegram-proof.jpg"
     alt="Telegram Proof"
@@ -181,7 +181,7 @@ export default function RedCrabIceWebsite() {
       <section id="payments" className="px-6 py-24 border-t border-white/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold">Payment Methods</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Payment Methods</h2>
             <p className="text-zinc-500 mt-4">
               Secure payment options with QR placeholders ready.
             </p>
@@ -193,7 +193,7 @@ export default function RedCrabIceWebsite() {
   <div className="
 border border-white/10
 rounded-3xl
-p-8
+p-4 md:p-8
 bg-white/5
 hover:border-red-600
 hover:-translate-y-2
