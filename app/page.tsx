@@ -426,6 +426,36 @@ duration-300
 >
   Contact Me
 </a>
+
+{/* Legal */}
+<section className="px-6 py-16 border-t border-white/10">
+  <div className="max-w-4xl mx-auto text-center text-zinc-500 text-sm leading-7">
+
+    <p className="mb-6">
+      What you are paying for is access to the private Telegram group where I share
+      my personal trades, market outlooks and execution ideas.
+      This is <span className="text-red-500">not financial advice.</span>
+    </p>
+
+    <p className="mb-6">
+      Trading involves risk. Past performance does not guarantee future results.
+      You are fully responsible for your own decisions and risk management.
+    </p>
+
+    <p className="mb-6">
+      Due to the digital nature of the service, all payments are final and
+      non-refundable once access has been delivered.
+    </p>
+
+    <p>
+      By joining the group, you agree that REDCRABICE is not liable for any
+      financial losses, damages or trading decisions made by users.
+    </p>
+
+  </div>
+</section>
+
+
       {/* Footer */}
       <footer className="border-t border-white/10 py-10 px-6 text-center text-zinc-500">
         <p>© 2026 REDCRABICE — All Rights Reserved</p>
