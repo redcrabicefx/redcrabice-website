@@ -70,8 +70,25 @@ const services = [
       </nav>
 
       {/* Hero */}
-      <section className="min-h-[90vh] flex flex-col items-center justify-center text-center px-6 -mt-8">
-          
+
+<section className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
+          {/* Background Image */}
+<div className="absolute inset-0 z-0">
+  <img
+    src="/domain-bg.jpg"
+    alt="Background"
+    className="w-full h-full object-cover opacity-25"
+  />
+
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/10"></div>
+
+  {/* Red glow */}
+  <div className="absolute inset-0 bg-red-900/10"></div>
+</div>
+
+{/* Hero Content */}
+<div className="relative z-10 flex flex-col items-center px-6 -mt-8">
          
          <div className="relative w-72 md:w-[500px] mb-8 animate-float">
   <img
@@ -83,15 +100,29 @@ const services = [
   <div className="absolute inset-0 pointer-events-none">
     <div className="moving-dot"></div>
   </div>
-</div>
-         
+  </div>
+  
         <p className="uppercase tracking-[0.4em] text-red-500 mb-4 text-sm">
           Disciplined • Patience • Execution
         </p>
 
-        <h1 className="text-3xl md:text-7xl font-black leading-tight max-w-5xl">
-          Trade With <span className="text-red-600">Structure</span>.
-        </h1>
+        <h1 className="
+text-7xl md:text-8xl
+font-black
+leading-tight
+max-w-5xl
+text-white
+drop-shadow-[0_0_25px_rgba(255,255,255,0.35)]
+whitespace-nowrap
+">
+  Trade With{" "}
+  <span className="
+  text-red-600
+  drop-shadow-[0_0_35px_rgba(255,0,0,0.9)]
+  ">
+    Structure
+  </span>.
+</h1>
 
         <p className="mt-6 max-w-2xl text-zinc-400 text-base md:text-lg">
           Transparent trading, disciplined execution and premium trading services built for <span className="text-red-600">serious traders.</span>
@@ -112,6 +143,7 @@ const services = [
             Payment Methods
           </a>
         </div>
+    </div>
       </section>
 
       {/* About */}
