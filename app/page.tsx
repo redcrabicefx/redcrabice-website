@@ -75,7 +75,7 @@ const services = [
           {/* Background Image */}
 <div className="absolute inset-0 z-0">
   <img
-    src="/domain-bg.jpg"
+    src="/domain-bg2.jpg"
     alt="Background"
     className="w-full h-full object-cover opacity-25"
   />
