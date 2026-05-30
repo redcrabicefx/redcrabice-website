@@ -125,7 +125,7 @@ whitespace-nowrap
 </h1>
 
         <p className="mt-6 max-w-2xl text-zinc-400 text-base md:text-lg">
-          Transparent trading, disciplined execution and premium trading services built for <span className="text-red-600">serious traders.</span>
+          Transparent trading, disciplined execution and premium telegram channel for <span className="text-red-600">serious traders.</span>
         </p>
 
         <div className="flex flex-wrap gap-4 mt-10">
